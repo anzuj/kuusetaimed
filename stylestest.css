@@ -1,0 +1,282 @@
+/*   .col-center {
+    display: table-cell;
+    padding: 10px 50px;
+    text-align: center;
+  }
+ */
+
+ img {
+   max-width:100%;
+  }
+
+  #esileht {
+    box-shadow: #444444;
+  }
+
+.col-container {
+    margin: 0 -10px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+  }
+  
+  .col {
+  width: 45%;
+  margin-top: 4%;
+  justify-content: space-between; 
+  padding: 0 10px;
+  }
+
+  .col p {
+    margin-block-start: 0em;
+  }
+  
+
+  /* making content 100% wide on mobile */
+  @media only screen and (max-width: 520px) {
+    body { 
+       width: 100% !important;
+     }
+
+     .col { 
+      width: 100%;
+    }
+     
+ }
+ 
+   /* making wider on tablets */
+   @media only screen and (min-width: 490px) and (max-width: 780px) {
+     body { 
+        width: 85% !important;
+      }
+  }
+
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'century gothic', "lucida sans", arial, sans-serif;
+    background-image: url(pics/5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* LANGBAR */
+  #langbar {
+      float: right;
+      font-size: 0.8em;
+      margin-top: 2%;
+      color: gray;
+  }
+  #est:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+    color: rgb(94, 92, 92);
+    cursor: pointer;
+  }
+  #eng:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+    color: rgb(94, 92, 92);
+    cursor: pointer;
+  }
+  /* LANGBAR */
+
+  #logo h1 a{
+    margin-top: 2%;
+    color: rgb(73, 56, 36);
+    font: normal 1.5em 'Economica', 'century gothic', sans-serif;
+    text-decoration: none;
+}
+
+
+#logo p {
+    margin-top: -2%;
+    margin-left: 3%;
+    margin-block-end: 0em;
+    font-size: 150%;
+    font-weight: 500;
+    color: rgb(41, 102, 69);
+    font-family: 'Economica', 'century gothic', sans-serif;
+}
+
+  #content {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block; 
+    position: relative; 
+    overflow: hidden; 
+    padding: 20px 30px;
+    min-height: 75vh;
+    font-size: 100%;
+  }
+
+#kontaktivorm {
+  display: block;
+ 
+}
+
+  #footer p {
+      text-align: center;
+      font-size: 0.6em;
+      color: rgba(181, 216, 135, 0.753);
+      letter-spacing: 0.2em;
+      
+  }
+
+
+
+
+
+/* NAVBAR */
+
+#cssmenu ul li a:hover{
+    background-color: rgba(154, 168, 114, 0.411);
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+  }
+
+  #cssmenu,
+  #cssmenu ul,
+  #cssmenu ul li,
+  #cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 500;
+  }
+
+  #cssmenu:after,
+  #cssmenu > ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  #cssmenu {
+    margin-top: 2%;
+    width: auto;
+    line-height: 1;
+    font-weight: 500;
+  }
+ 
+  #cssmenu > ul > li {
+    float: right;
+
+  }
+
+  #cssmenu > ul > li > a {
+    z-index: 2;
+    padding: 12px 20px 12px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #444444;
+  }
+
+/* FB ICON */
+#cssmenu li.none a:hover {
+    background-color: transparent;
+    font-weight: normal;
+    transform: scale(1.5);
+    transition: 0.2s ease-in-out;
+}
+
+#cssmenu li.none a {
+   padding-right: 12px;
+   margin-left: -10px;
+}
+.fa-facebook-square {
+    color:rgb(94, 94, 235);
+
+} /* FB ICON */
+
+
+
+
+  .transportlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    height: 50px;
+  }
+  
+  #map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+  }
+  #map iframe {
+   top: 0;
+   left: 0;
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 170px;
+  }
+
+  /* CONTACT FORM */
+  
+  .form_settings p {
+    padding: 0 0 4px 0;
+  }
+  
+  .form_settings span {
+    float: left;
+    width: 200px;
+    text-align: right;
+    margin-right: 5px;
+  }
+  
+  .form_settings input,
+  .form_settings textarea {
+    padding: 5px;
+    width: 299px;
+    font: 100% 'century gothic', sans-serif;
+    border: 1px solid rgb(209, 209, 199);
+    background: #FFF;
+    color: #47433F;
+  }
+  
+  .form_settings .submit {
+    font: 100% 'century gothic', sans-serif;
+    border: 0;
+    width: 99px;
+  
+    height: 33px;
+    padding: 2px 0 3px 0;
+    cursor: pointer;
+    background:  rgb(59, 97, 71);
+    color: #FFF;
+  }
+  
+  .form_settings .submit:hover{
+    background:  rgb(89, 151, 109);
+    
+  
+  }
+  
+  .form_settings textarea,{
+    font: 100% arial;
+    width: 299px;
+  }
+  
+  
+  /* CONTACT FORM */
