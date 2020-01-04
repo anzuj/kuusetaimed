@@ -1,282 +1,253 @@
-/*   .col-center {
-    display: table-cell;
-    padding: 10px 50px;
-    text-align: center;
-  }
- */
+<!DOCTYPE HTML>
+<html lang="en">
 
- img {
-   max-width:100%;
-  }
+<head>
+  <title>Kuusetaimed</title>
+  <meta name="description" content="Kuusetaimede müük" />
+  <!-- mobile optimised -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta content="text/html; charset=utf-8" />
+  <link rel="icon" href="pics/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="stylestest.css" />
+  <link href="https://fonts.googleapis.com/css?family=Economica|Acme&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
-  #esileht {
-    box-shadow: #444444;
-  }
+  <meta name="theme-color" content="#6F8377"/>
+</head>
 
-.col-container {
-    margin: 0 -10px;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+<body>
 
-  }
-  
-  .col {
-  width: 45%;
-  margin-top: 4%;
-  justify-content: space-between; 
-  padding: 0 10px;
-  }
-
-  .col p {
-    margin-block-start: 0em;
-  }
-  
-
-  /* making content 100% wide on mobile */
-  @media only screen and (max-width: 520px) {
-    body { 
-       width: 100% !important;
-     }
-
-     .col { 
-      width: 100%;
-    }
-     
- }
- 
-   /* making wider on tablets */
-   @media only screen and (min-width: 490px) and (max-width: 780px) {
-     body { 
-        width: 85% !important;
-      }
-  }
+  <div class="container">
+    <!-- daddy container -->
+    <!-- LOGO -->
 
 
-body {
-    box-sizing: border-box;
-    height: 100%;
-    font-family: 'century gothic', "lucida sans", arial, sans-serif;
-    background-image: url(pics/5.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: rgb(255, 255, 255);
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  /* LANGBAR */
-  #langbar {
-      float: right;
-      font-size: 0.8em;
-      margin-top: 2%;
-      color: gray;
-  }
-  #est:hover {
-    font-weight: bold;
-    transform: scale(1.1);
-    color: rgb(94, 92, 92);
-    cursor: pointer;
-  }
-  #eng:hover {
-    font-weight: bold;
-    transform: scale(1.1);
-    color: rgb(94, 92, 92);
-    cursor: pointer;
-  }
-  /* LANGBAR */
-
-  #logo h1 a{
-    margin-top: 2%;
-    color: rgb(73, 56, 36);
-    font: normal 1.5em 'Economica', 'century gothic', sans-serif;
-    text-decoration: none;
-}
+    <a href="eng/index-en.html">
+      <span><img class="flag" src="pics/eng.png" alt="" srcset=""></span>
+    </a>
 
 
-#logo p {
-    margin-top: -2%;
-    margin-left: 3%;
-    margin-block-end: 0em;
-    font-size: 150%;
-    font-weight: 500;
-    color: rgb(41, 102, 69);
-    font-family: 'Economica', 'century gothic', sans-serif;
-}
+    <div id="logo">
+      <h1><a href="index.html">KUUSETAIMED ja -ISTIKUD</a></h1>
+      <p class="d-none d-md-block">Luhaäär ja Partnerid</p>
+    </div>
 
-  #content {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: block; 
-    position: relative; 
-    overflow: hidden; 
-    padding: 20px 30px;
-    min-height: 75vh;
-    font-size: 100%;
-  }
 
-#kontaktivorm {
-  display: block;
- 
-}
 
-  #footer p {
-      text-align: center;
-      font-size: 0.6em;
-      color: rgba(181, 216, 135, 0.753);
-      letter-spacing: 0.2em;
-      
-  }
+    <!-- /LOGO -->
+
+    <div class="container">
+
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+            aria-selected="true">AVALEHT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="transport-tab" data-toggle="tab" href="#transport" role="tab"
+            aria-controls="transport" aria-selected="false">TRANSPORT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+            aria-selected="false">KONTAKT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery"
+            aria-selected="false">GALERII</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://www.facebook.com/Kuusetaimed-2019273008149913/">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </li>
 
 
 
 
 
-/* NAVBAR */
 
-#cssmenu ul li a:hover{
-    background-color: rgba(154, 168, 114, 0.411);
-    font-weight: bold;
-    transition: 0.2s ease-in-out;
-  }
+      </ul>
 
-  #cssmenu,
-  #cssmenu ul,
-  #cssmenu ul li,
-  #cssmenu ul li a {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    list-style: none;
-    line-height: 1;
-    display: block;
-    position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font-weight: 500;
-  }
+      <!-- tab-content -->
+      <div class="tab-content" id="content">
 
-  #cssmenu:after,
-  #cssmenu > ul:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-  }
-  #cssmenu {
-    margin-top: 2%;
-    width: auto;
-    line-height: 1;
-    font-weight: 500;
-  }
- 
-  #cssmenu > ul > li {
-    float: right;
-
-  }
-
-  #cssmenu > ul > li > a {
-    z-index: 2;
-    padding: 12px 20px 12px 20px;
-    font-size: 15px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #444444;
-  }
-
-/* FB ICON */
-#cssmenu li.none a:hover {
-    background-color: transparent;
-    font-weight: normal;
-    transform: scale(1.5);
-    transition: 0.2s ease-in-out;
-}
-
-#cssmenu li.none a {
-   padding-right: 12px;
-   margin-left: -10px;
-}
-.fa-facebook-square {
-    color:rgb(94, 94, 235);
-
-} /* FB ICON */
+        <!-- <div class="row">
+        <div class="col-12 col-lg-8"> -->
 
 
 
+        <!-- home tab-->
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <h2>Kes me oleme?</h2>
+          <div class="col-container">
 
-  .transportlogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    height: 50px;
-  }
-  
-  #map {
-    position: relative;
-    padding-bottom: 75%;
-    height: 0;
-    overflow: hidden;
-  }
-  #map iframe {
-   top: 0;
-   left: 0;
-    position: absolute;
-    width: 100% !important;
-    height: 100% !important;
-    max-height: 170px;
-  }
 
-  /* CONTACT FORM */
-  
-  .form_settings p {
-    padding: 0 0 4px 0;
-  }
-  
-  .form_settings span {
-    float: left;
-    width: 200px;
-    text-align: right;
-    margin-right: 5px;
-  }
-  
-  .form_settings input,
-  .form_settings textarea {
-    padding: 5px;
-    width: 299px;
-    font: 100% 'century gothic', sans-serif;
-    border: 1px solid rgb(209, 209, 199);
-    background: #FFF;
-    color: #47433F;
-  }
-  
-  .form_settings .submit {
-    font: 100% 'century gothic', sans-serif;
-    border: 0;
-    width: 99px;
-  
-    height: 33px;
-    padding: 2px 0 3px 0;
-    cursor: pointer;
-    background:  rgb(59, 97, 71);
-    color: #FFF;
-  }
-  
-  .form_settings .submit:hover{
-    background:  rgb(89, 151, 109);
-    
-  
-  }
-  
-  .form_settings textarea,{
-    font: 100% arial;
-    width: 299px;
-  }
-  
-  
-  /* CONTACT FORM */
+            <div class="col">
+              <p>Oleme väikeettevõtte Rõngus. Kasvatame ja müüme avajuurset kuusetaime. </p>
+              <h3>Hinnakiri</h3>
+
+              <p><strong><i class="fas fa-tree"></i> 1. sort alates 22 cm juurekaelast:</strong>
+                <br>kuni 1000 tk: 0.20 €/tk + KM <br>
+                alates 1000 tk: 0.17 €/tk + KM </p>
+              <p><strong><i class="fas fa-tree"></i> 2. sort kuni 22 cm juurekaelast:</strong> <br>
+                0.15 €/tk + KM </p
+            </div>
+            <div class="col-6  mx-auto">
+              <img class="rounded d-block img-fluid" src="pics/kuuseke.jpg" alt="kuuseke">
+            </div>
+          </div>
+        </div>
+        <!-- /home tab-->
+
+        <!-- transport tab-->
+        <div class="tab-pane fade" id="transport" role="tabpanel" aria-labelledby="transport-tab">
+          <h2>Transport</h2>
+          <div class="row">
+
+            <div class="col-12 col-md-6">
+              <img class="transportlogo" src="pics/omniva.png" alt="omniva logo">
+              <p>Pakume taimede saatmise võimalust pakiautomaadiga (<a
+                  href="https://www.omniva.ee/abi/kaart/asukohad">Omniva</a>) kuni 400 tk pakis. <br><br>
+                Saatmiskuludele lisandub pakendamiskulu 10.00 € paki eest. </p>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <img class="transportlogo" src="https://image.flaticon.com/icons/png/512/31/31520.png" alt="auto">
+              <p>Soovi korral toome taimed ise Teie poolt määratud aadressile. Kilomeetri hind 0.70 € algus- ja
+                lõppkohaga <a
+                  href="https://www.google.com/maps/search/Lauda+R%C3%B5ngu+61001+Tartu+maakond/@58.143039,26.238103,16z?hl=et-EE">
+                  Rõngus</a>.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /transport tab-->
+
+        <!-- /contact tab -->
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <h2>Luhaäär ja Partnerid OÜ</h2>
+
+          <div class="col-container">
+            <div class='col'>
+              <p> <strong>Telefon:</strong> 5565 7735 <br>
+                <strong>E-post:</strong> <a id="email" href="mailto:info@kuusetaimed.ee">info@kuusetaimed.ee</a><br>
+                <strong>Pangakonto:</strong> EE532200221051623079 (Swedbank)
+                <br> </p>
+              <p><strong>Registrikood:</strong> 12046421 <br>
+                <strong>Majandustegevuse registrinumber:</strong> KUL 000058 <br><br>
+                <strong>Juriidiline aadress:</strong> Mõisavahe 22–13, 50707 Tartu </p>
+
+            </div>
+            <div class='col'>
+              <p><strong>Taimla aadress:</strong> Lauda, Rõngu, 61001 Tartu maakond</p>
+              <div id="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2105.826135850757!2d26.2386553!3d58.1430697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb6b7f38c505f3%3A0xb0a0ae7ceaffad00!2sLauda%2C+R%C3%B5ngu%2C+61001+Tartu+maakond!5e0!3m2!1set!2see!4v1547995301694"
+                  display="block" width="350px" height="150px" frameborder="0" style="border:0"
+                  allowfullscreen=""></iframe></div>
+            </div>
+
+          </div>
+
+        </div> <!-- /contact tab -->
+
+        <!-- gallery tab-->
+        <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+          <div class="gallery-container">
+
+            <h2>Galerii</h2>
+
+            <div class="tz-gallery">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <a class="lightbox" href="pics/6.jpg">
+                    <img src="pics/6.jpg" alt="Park">
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a class="lightbox"
+                    href="https://www.themayor.eu/uploads/image/file/2490/medium_forest.jpg?1552485595">
+                    <img src="https://www.themayor.eu/uploads/image/file/2490/medium_forest.jpg?1552485595"
+                      alt="Bridge">
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a class="lightbox" href="pics/6.jpg">
+                    <img src="pics/6.jpg" alt="Park">
+                  </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <a class="lightbox"
+                    href="https://www.themayor.eu/uploads/image/file/2490/medium_forest.jpg?1552485595">
+                    <img src="https://www.themayor.eu/uploads/image/file/2490/medium_forest.jpg?1552485595"
+                      alt="Bridge">
+                  </a>
+                </div>
+
+
+                <div class="col-sm-12 col-md-6">
+                  <a class="lightbox" href="pics/6.jpg">
+                    <img src="pics/6.jpg" alt="Park">
+                  </a>
+                </div>
+
+
+                <div class="col-sm-12 col-md-6">
+                  <a class="lightbox"
+                    href="https://www.themayor.eu/uploads/image/file/2490/medium_forest.jpg?1552485595">
+                    <img src="https://www.themayor.eu/uploads/image/file/2490/medium_forest.jpg?1552485595"
+                      alt="Bridge">
+                  </a>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /gallery tab-->
+
+
+      </div> <!-- /tabcontent end -->
+    </div> <!-- /container end -->
+
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <p> Website by: <a href="mailto:anzelika91@gmail.com">Anzelika Jerofenko</a></p>
+    </div>
+    <!-- /FOOTER -->
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+      baguetteBox.run('.tz-gallery');
+    </script>
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+  </div> <!-- daddy container -->
+</body>
+
+</html>
