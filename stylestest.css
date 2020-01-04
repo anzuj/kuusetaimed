@@ -53,6 +53,7 @@ body {
   background-image: url("pics/5.jpg");
   background-size: cover;
   background-attachment: fixed;
+  height: 100%;
 
 }
 
