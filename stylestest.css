@@ -50,7 +50,7 @@
 
 body {
   font-family: 'century gothic', "lucida sans", arial, sans-serif;
-  background-image: url(pics/5.jpg);
+  background-image: url("pics/5.jpg");
   background-size: cover;
   background-attachment: fixed;
 
