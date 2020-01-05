@@ -235,23 +235,6 @@ li i:hover {
   height: 50px;
 }
 
-#map {
-  position: relative;
-  padding-bottom: 75%;
-  height: 0;
-  overflow: hidden;
-}
-
-#map iframe {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100% !important;
-  height: 100% !important;
-  max-height: 170px;
-}
-
-
 
 /* BS GALLERY */
 .container.gallery-container {
