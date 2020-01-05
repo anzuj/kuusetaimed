@@ -13,10 +13,10 @@
   }
 
   .tz-gallery {
-     padding: 0 !important;
+    padding: 0 !important;
   }
 
-  #home p {
+  #home p, #transport p, #contact p {
     font-size: 15px !important;
   }
 
@@ -48,12 +48,18 @@
 
 /* /mobile-friendly */
 
+.link a {
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(101, 160, 74) !important;
+}
+
 body {
   font-family: 'century gothic', "lucida sans", arial, sans-serif;
   background-image: url("pics/5.jpg");
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100%;
+  height: 100%;
 
 }
 
@@ -236,7 +242,7 @@ li i:hover {
 }
 
 .tz-gallery {
-  padding: 0 40px 10px 40px;
+  padding: 0 !important;
 }
 
 .tz-gallery .lightbox img {
@@ -244,7 +250,7 @@ li i:hover {
   margin-bottom: 30px;
   transition: 0.2s ease-in-out;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  height: 200px;
+  height: 200px !important;
 }
 
 
