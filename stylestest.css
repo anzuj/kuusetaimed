@@ -4,6 +4,10 @@
     width: 100% !important;
     margin: 0 !important;
   }
+
+  h1 {
+    font-size: 30px !important;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -118,12 +122,6 @@ h3 {
 img #kuuseke {
   max-width: 60%;
 }
-
-#email {
-  color: rgb(101, 160, 74) !important;
-  font-weight: 600;
-}
-
 
 
 .navbar-toggler {
