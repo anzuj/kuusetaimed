@@ -12,15 +12,25 @@
 
 @media only screen and (max-width: 520px) {
 
+  .flag {
+    margin-top: 3px !important;
+  }
+
+  .transportlogo{
+    margin-top: 30px;
+  }
+
   .tz-gallery .lightbox img {
-    height: 200px  !important;
+    height: 200px !important;
   }
 
   .tz-gallery {
     padding: 0 !important;
   }
 
-  #home p, #transport p, #contact p {
+  #home p,
+  #transport p,
+  #contact p {
     font-size: 15px !important;
   }
 
@@ -58,12 +68,18 @@
   color: rgb(101, 160, 74) !important;
 }
 
+html {
+  background: url("pics/5.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 body {
   font-family: 'century gothic', "lucida sans", arial, sans-serif;
-  background-image: url("pics/5.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100%;
+  background-color: transparent !important;
 
 }
 
@@ -104,7 +120,7 @@ h3 {
 .flag {
   height: 22px;
   float: right;
-  margin-top: 3px;
+  margin-top: 10px !important;
 }
 
 .flag:hover {
@@ -132,12 +148,14 @@ img #kuuseke {
 
 #logo {
   text-align: center !important;
+  margin-top: 20px;
 }
 
 #logo h1 a {
   color: rgb(73, 56, 36);
   font: normal 1.5em 'Economica', 'century gothic', sans-serif;
   text-decoration: none;
+
 
 }
 
@@ -182,10 +200,11 @@ h2 {
 
 
 #footer p {
+  margin-bottom: 0;
   text-align: center;
   font-size: 0.6em;
   letter-spacing: 0.2em;
-  color: rgba(181, 216, 135, 0.753) !important;
+  color: rgba(203, 236, 160, 0.753) !important;
 
 }
 
@@ -204,6 +223,7 @@ li i:hover {
   color: rgb(94, 94, 235);
 
 }
+
 /* FB ICON */
 
 
